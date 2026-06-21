@@ -1,127 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faris Yousuf | Senior Android Developer</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faris Yousuf — Senior Android Developer</title>
+<meta name="description" content="Faris Yousuf — Senior Android Developer specializing in secure, high-performance banking applications built with Kotlin and Jetpack Compose. 10+ years engineering production mobile systems across the UAE, Egypt and Jordan.">
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <h1>Faris Yousuf</h1>
-    <h2>Senior Android Developer</h2>
-    <p>
-      10+ years of experience building secure, scalable Android applications
-      with Kotlin, Jetpack Compose, and modern architecture — primarily in
-      banking and finance domains.
-    </p>
-    <div class="hero-links">
-      <a href="mailto:farisyousuf@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/faris-yousuf-079942104/" target="_blank">LinkedIn</a>
-    </div>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">FY</span>
+      <span class="brand-text">Faris&nbsp;Yousuf</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="topbar-cta" href="mailto:farisyousuf@gmail.com">Get in touch</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-<!-- ABOUT -->
-<section class="section">
-  <div class="container">
-    <h3>About Me</h3>
-    <p>
-      I am a Senior Android Developer with over a decade of experience delivering
-      high-quality, performance-critical mobile applications. My expertise lies
-      in Kotlin, Jetpack Compose, Clean Architecture, and Android security.
-    </p>
-    <p>
-      I have worked extensively on large-scale banking applications, leading UI
-      revamps, improving user journeys, increasing security through encryption
-      and request signing, and mentoring teams through code reviews and
-      architectural guidance.
-    </p>
-  </div>
-</section>
+<main id="main">
 
-<!-- SKILLS -->
-<section class="section section-alt">
-  <div class="container">
-    <h3>Core Skills</h3>
-    <div class="skills-grid">
-      <span>Kotlin</span>
-      <span>Java</span>
-      <span>Jetpack Compose</span>
-      <span>XML Layouts</span>
-      <span>Clean Architecture</span>
-      <span>MVVM / MVI</span>
-      <span>Coroutines & Flow</span>
-      <span>Hilt / Dagger / Koin</span>
-      <span>Retrofit / OkHttp</span>
-      <span>Android Security & Keystore</span>
-      <span>Room / DataStore</span>
-      <span>JUnit / Mockito / Espresso</span>
-      <span>Gradle / R8 / ProGuard</span>
-      <span>Firebase / Crashlytics</span>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Available for Senior / Staff Android roles</p>
+        <h1 class="hero-title">
+          Building Android apps<br>
+          people <em>trust</em> with<br>
+          their money.
+        </h1>
+        <p class="hero-sub">
+          Senior Android Developer with 10+ years shipping secure, high-performance
+          banking and fintech applications in Kotlin and Jetpack Compose —
+          from request signing and device binding to UI that millions of customers
+          rely on daily.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experience">View experience</a>
+          <a class="btn btn-ghost" href="#contact">Contact details</a>
+        </div>
+        <dl class="hero-meta">
+          <div><dt>Based in</dt><dd>Dubai, UAE</dd></div>
+          <div><dt>Languages</dt><dd>EN · AR · HI · ML</dd></div>
+          <div><dt>Currently</dt><dd>Associate Staff Engineer, Nagarro</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img src="assets/faris-photo.jpg" alt="Portrait of Faris Yousuf" width="320" height="320" loading="eager">
+          <span class="frame-corner tl" aria-hidden="true"></span>
+          <span class="frame-corner tr" aria-hidden="true"></span>
+          <span class="frame-corner bl" aria-hidden="true"></span>
+          <span class="frame-corner br" aria-hidden="true"></span>
+        </div>
+
+        <div class="terminal" role="img" aria-label="Mock signed API request demonstrating request-signing expertise">
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+            <span class="terminal-title">signed_request.http</span>
+          </div>
+          <pre class="terminal-body" id="terminalBody" aria-hidden="true">POST /api/v2/transfer
+<span class="dim">X-Device-Binding: a8f3c1...e91c</span>
+<span class="ok">X-Signature: 4f9b7c2e...verified</span>
+<span class="dim">HMAC-SHA256 &mdash; request authenticated &#10003;</span></pre>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPERIENCE -->
-<section class="section">
-  <div class="container">
-    <h3>Experience</h3>
-
-    <div class="card">
-      <h4>Associate Staff Engineer — Nagarro</h4>
-      <span>2017 – Present | Dubai, UAE</span>
-      <ul>
-        <li>Leading large-scale banking applications used by millions of users</li>
-        <li>Revamped transfer and payment flows using Jetpack Compose</li>
-        <li>Delivered features like Favorite Beneficiary, Payment Reminders, Card Activation, PIN Reset</li>
-        <li>Improved daily active users by <strong>50%</strong> through UX optimization</li>
-        <li>Implemented request signing, encryption, authentication, and device binding</li>
-        <li>Improved unit test coverage to <strong>75%</strong></li>
-      </ul>
+  <!-- ============ STATS ============ -->
+  <section class="stats reveal">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Years in Android development</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">9</span>
+        <span class="stat-label">Banking &amp; fintech engagements</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">75%</span>
+        <span class="stat-label">Unit test coverage achieved</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">+50%</span>
+        <span class="stat-label">Daily active users uplift</span>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h4>Banking Projects (Client Engagements)</h4>
-      <ul>
-        <li><strong>Emirates NBD</strong> — Migrated Smart OTP to TOTP, user migration to new app</li>
-        <li><strong>United Arab Bank</strong> — Set up Clean Architecture, owned login & dashboard modules</li>
-        <li><strong>Emirates Islamic</strong> — Payments, Transfers, SmartPass, Google Pay, Card Settings</li>
-        <li><strong>Jordan Islamic Bank</strong> — Maintenance, Smart Token, Payments & Transfers</li>
-      </ul>
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="section-kicker">Career record — reverse chronological</p>
+        <h2>Experience</h2>
+      </header>
+
+      <div class="timeline">
+
+        <!-- NAGARRO -->
+        <article class="role-block reveal">
+          <div class="role-head">
+            <div class="role-head-main">
+              <h3>Associate Staff Engineer</h3>
+              <p class="role-org">Nagarro · Dubai, United Arab Emirates</p>
+            </div>
+            <span class="role-dates mono">05/2017 — Present</span>
+          </div>
+
+          <div class="engagement current">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>Leading Banking Application <span class="loc">· Egypt</span></h4>
+                <span class="engagement-dates mono">03/2022 — Present</span>
+              </div>
+              <ul>
+                <li>Revamped the transfer module, schedule payments and lead payments UI with core Jetpack Compose components.</li>
+                <li>Shipped Favorite Beneficiary, Payment Reminders, Card Activate/Unblock, Set‑Reset PIN, Link/Delink Accounts and Debit Card features.</li>
+                <li>Drove a <strong>50% increase in daily active users</strong> by optimizing user journeys and UI components.</li>
+                <li class="secured"><span class="seal-tag" title="Security-focused work">●</span> Hardened application security with advanced encryption, authentication and device binding for signing every API request.</li>
+                <li>Raised unit test coverage across the app to <strong>75%</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>Emirates NBD</h4>
+                <span class="engagement-dates mono">05/2020 — 02/2022</span>
+              </div>
+              <ul>
+                <li>Built new features and resolved cross-device bugs across the mobile app.</li>
+                <li class="secured"><span class="seal-tag" title="Security-focused work">●</span> Increased account security by migrating the Smart OTP system to TOTP.</li>
+                <li>Led the technical flow for migrating users from the legacy app to the new application.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>United Arab Bank</h4>
+                <span class="engagement-dates mono">11/2019 — 05/2020</span>
+              </div>
+              <ul>
+                <li>Set up the base project on Clean Architecture with defined UI and design principles.</li>
+                <li>Owned core modules — login, dashboard and finance summary.</li>
+                <li>Built payments, transfers and product application features.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>DiGi ID Tablet Applications</h4>
+                <span class="engagement-dates mono">03/2019 — 11/2019</span>
+              </div>
+              <ul>
+                <li>Improved UI design efficiency by building custom, reusable components.</li>
+                <li>Integrated a PDF signing feature.</li>
+                <li>Worked across working-queue, customer onboarding and verification modules.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>Smart Salik</h4>
+                <span class="engagement-dates mono">03/2019 — 06/2019</span>
+              </div>
+              <ul>
+                <li>Migrated push notifications from GCM to FCM and upgraded the Countly SDK.</li>
+                <li>Analyzed and resolved categorized production bugs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>Emirates Islamic</h4>
+                <span class="engagement-dates mono">04/2018 — 02/2019</span>
+              </div>
+              <ul>
+                <li>Owned Payments/Transfers integrations, SmartPass, Google Pay, the demo app, and Profile &amp; Card Settings.</li>
+                <li>Maintained Touch ID login, instant transfers and payments.</li>
+                <li>Upgraded SDKs and enhanced card-settings functionality.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>Jordan Islamic Bank</h4>
+                <span class="engagement-dates mono">02/2018 — 04/2018</span>
+              </div>
+              <ul>
+                <li>Maintenance and updates across Queuing Ticket, Smart Token, Transfers and Payments features.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <div class="engagement-head">
+                <h4>Emirates NBD <span class="loc">· Corporate &amp; Retail</span></h4>
+                <span class="engagement-dates mono">05/2017 — 01/2018</span>
+              </div>
+              <ul>
+                <li>Owned new Payments/Transfers integrations, Mepay enhancements, Touch ID login across devices, and Smartpass.</li>
+                <li>Upgraded the project to the latest networking and form SDKs, with broad code refactoring.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- QBURST -->
+        <article class="role-block reveal">
+          <div class="role-head">
+            <div class="role-head-main">
+              <h3>Mobile Application Developer</h3>
+              <p class="role-org">QBurst · India</p>
+            </div>
+            <span class="role-dates mono">05/2015 — 04/2017</span>
+          </div>
+          <div class="engagement standalone">
+            <div class="engagement-rail" aria-hidden="true"></div>
+            <div class="engagement-body">
+              <ul>
+                <li>Built Android apps for carpooling and medical-education platforms with OAuth login, user profiles, ride selection, Google Maps integration and PDF management.</li>
+                <li>Handled GCM notifications, critical bug fixes and performance improvements across multiple apps.</li>
+                <li>Built AngularJS web features — landing pages, user profiles, settings and dynamic category lists.</li>
+                <li>Maintained and enhanced applications for smooth functionality and optimal UX.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h4>Mobile Application Developer — QBurst</h4>
-      <span>2015 – 2017 | India</span>
-      <ul>
-        <li>Developed Android apps for carpooling and medical education platforms</li>
-        <li>Integrated Google Maps, OAuth login, PDF management, notifications</li>
-        <li>Improved performance and stability through bug fixes and refactoring</li>
-      </ul>
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="section-kicker">Toolbox</p>
+        <h2>Skills</h2>
+      </header>
+
+      <div class="skill-groups">
+
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>Languages &amp; UI</h3>
+          <div class="chips">
+            <span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">Jetpack Compose</span>
+            <span class="chip">XML Layouts</span><span class="chip">ConstraintLayout</span><span class="chip">ViewModel</span>
+            <span class="chip">LiveData</span><span class="chip">Navigation</span><span class="chip">Coroutines</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon" aria-hidden="true">▣</span>Architecture &amp; Data</h3>
+          <div class="chips">
+            <span class="chip">Clean Architecture</span><span class="chip">MVVM</span><span class="chip">MVI</span>
+            <span class="chip">Hilt</span><span class="chip">Dagger</span><span class="chip">Koin</span>
+            <span class="chip">Room Database</span><span class="chip">DataStore</span><span class="chip">WorkManager</span>
+            <span class="chip">Ktor Client</span><span class="chip">Retrofit</span><span class="chip">OkHttp</span><span class="chip">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal featured">
+          <h3><span class="skill-icon seal" aria-hidden="true">◎</span>Security</h3>
+          <div class="chips">
+            <span class="chip chip-accent">Android Keystore System</span><span class="chip chip-accent">Request Signing</span>
+            <span class="chip chip-accent">Biometric Authentication</span><span class="chip chip-accent">Device Binding</span>
+            <span class="chip chip-accent">Encryption</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon" aria-hidden="true">✓</span>Testing &amp; Tooling</h3>
+          <div class="chips">
+            <span class="chip">JUnit</span><span class="chip">Espresso</span><span class="chip">Mockito</span>
+            <span class="chip">LeakCanary</span><span class="chip">Gradle</span><span class="chip">Proguard / R8</span>
+            <span class="chip">Firebase</span><span class="chip">Crashlytics</span><span class="chip">Android Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon" aria-hidden="true">⇄</span>Collaboration &amp; Process</h3>
+          <div class="chips">
+            <span class="chip">Cross-functional Collaboration</span><span class="chip">API Design</span><span class="chip">Mentorship</span>
+            <span class="chip">Code Review</span><span class="chip">Agile</span><span class="chip">Git</span>
+            <span class="chip">Jira</span><span class="chip">Trello</span><span class="chip">Postman</span><span class="chip">Flutter</span><span class="chip">KMP</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="languages reveal">
+        <h3>Spoken languages</h3>
+        <ul class="lang-list">
+          <li>
+            <div class="lang-row"><span>English</span><span class="mono muted">Proficient</span></div>
+            <div class="lang-bar"><span style="width:90%"></span></div>
+          </li>
+          <li>
+            <div class="lang-row"><span>Malayalam</span><span class="mono muted">Native</span></div>
+            <div class="lang-bar"><span style="width:100%"></span></div>
+          </li>
+          <li>
+            <div class="lang-row"><span>Hindi</span><span class="mono muted">Advanced</span></div>
+            <div class="lang-bar"><span style="width:80%"></span></div>
+          </li>
+          <li>
+            <div class="lang-row"><span>Arabic</span><span class="mono muted">Intermediate</span></div>
+            <div class="lang-bar"><span style="width:50%"></span></div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="section-kicker">Foundation</p>
+        <h2>Education</h2>
+      </header>
 
-<!-- EDUCATION -->
-<section class="section section-alt">
-  <div class="container">
-    <h3>Education</h3>
-    <p>
-      <strong>B.Tech in Information Technology</strong><br />
-      Cochin University of Science and Technology (2011 – 2015)
-    </p>
-  </div>
-</section>
+      <div class="edu-card reveal">
+        <div class="edu-mark mono" aria-hidden="true">B.Tech</div>
+        <div>
+          <h3>B.Tech in Information Technology</h3>
+          <p class="role-org">Cochin University of Science and Technology — College of Engineering, Thalassery, India</p>
+          <span class="role-dates mono">2011 — 2015</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- FOOTER -->
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="seal-stamp" aria-hidden="true">
+          <svg viewBox="0 0 160 160" width="120" height="120">
+            <defs>
+              <path id="sealCircle" d="M 80,80 m -62,0 a 62,62 0 1,1 124,0 a 62,62 0 1,1 -124,0"></path>
+            </defs>
+            <circle cx="80" cy="80" r="74" class="seal-ring-outer"></circle>
+            <circle cx="80" cy="80" r="50" class="seal-ring-inner"></circle>
+            <text font-size="10.5" letter-spacing="3" class="seal-text">
+              <textPath href="#sealCircle" startOffset="0%">VERIFIED · OPEN TO WORK · SIGNED · </textPath>
+            </text>
+            <path d="M58 80 L73 95 L104 62" class="seal-check"></path>
+          </svg>
+        </div>
+
+        <h2>Let's build something secure.</h2>
+        <p>Open to Senior and Staff Android opportunities — particularly where security, performance and craft on Kotlin &amp; Compose actually matter.</p>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:farisyousuf@gmail.com">
+            <span class="contact-label mono">Email</span>
+            <span class="contact-value">farisyousuf@gmail.com</span>
+          </a>
+          <a class="contact-item" href="tel:+971509171947">
+            <span class="contact-label mono">Phone</span>
+            <span class="contact-value">+971 50 917 1947</span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/faris-yousuf-079942104/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label mono">LinkedIn</span>
+            <span class="contact-value">/in/faris-yousuf</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-label mono">Location</span>
+            <span class="contact-value">Al Ghubaiba, Dubai, UAE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
 <footer class="footer">
-  <p>© 2026 Faris Yousuf • Dubai, UAE</p>
+  <div class="container footer-inner">
+    <span class="mono">© <span id="year"></span> Faris Yousuf</span>
+    <span class="mono muted">Built with Kotlin in mind, written in HTML.</span>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
